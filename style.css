@@ -1,0 +1,137 @@
+body{
+  font-family: 'Roboto Slab', serif;
+}
+
+.jumbotron{
+  padding-top: 6rem;
+  background-color:#e9e9f4;
+}
+p,h5,h1,a{
+  font-family: 'Roboto Slab', serif;
+}
+
+../* 
+.melayani{
+  margin-bottom: 3;
+} */
+/* #testimoni{
+   background-color:#e9e9f4;
+} */
+
+#kontak{
+  background-color:#e9e9f4;
+}
+#melayani{
+  background-color:#e9e9f4;
+}
+#kontak{
+  background-color:#e9e9f4;
+}
+
+.sebagai{
+  font-size: 15px;
+}
+section{
+  padding-top: 5rem;
+}
+
+    /* ini bagian testimonial */
+    
+    h2{
+      position: relative;
+      margin: 40px 0;
+    }
+    h2::before{
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 3px;
+      background-color: crimson;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: animate 4s linear infinite;
+    }
+    
+    @keyframes animate{
+      0%{
+        width: 100px;
+      }
+      50%{
+        width: 200px;
+      }
+      10%{
+        width: 100px;
+      }
+    }
+    div{
+      text-align: center;
+      font-family: Arial;
+    }
+    input{
+      display: none;
+    }
+    
+    .tag{
+      font-size: 1.4rem;
+      margin: 1.5rem 0rem;
+      padding: 5px 1.8rem;
+      border-radius: 50px;
+      background-color: #efefef;
+      display: inline-block;
+      color: #black;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      }
+    img{
+      width: 250px;
+      transition: all.4s ease-in-out;
+      padding: 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+    /* filter */
+    /* #all:checked ~ .images > img:not([class *="all"]), */
+    #rekber:checked ~ .images > img:not([class *="rekber"]),
+    #direct:checked ~ .images > img:not([class *="direct"]),
+    #sosmed:checked ~ .images > img:not([class *="sosmed"]),
+    #topup:checked ~ .images > img:not([class *="topup"]),
+    #convert:checked ~ .images > img:not([class *="convert"])
+    {
+      width: 0px;
+      height: 0px;
+    }
+    
+/*     #all:checked ~ .all, */
+    #rekber:checked ~ .rekber,
+    #direct:checked ~ .direct,
+    #sosmed:checked ~ .sosmed,
+    #topup:checked ~ .topup,
+    #convert:checked ~ .convert{
+      background-color: #333333;
+      color: white;
+    }
+    /* end Testimonial */
+    
+footer .social_icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: flex-wrap;
+}
+
+footer .social_icon li{
+  list-style: none;
+}
+
+footer .social_icon li a{
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transform: 0.5s;
+}
+footer .social_icon li a:hover{
+  transform: translateY(-10px);
+}
